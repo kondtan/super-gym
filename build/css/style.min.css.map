@@ -1,1 +1,1 @@
-{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA,I,CACE,wB","file":"style.min.css","sourcesContent":["body {\n  background-color: rgb(141, 255, 137);\n}\n"]}
+{"version":3,"sources":["global.scss"],"names":[],"mappings":"AAAA,M,CACE,6B,CAAA,qB,CAGF,gB,CACE,iB,CACA,kB,CACA,S,CACA,U,CACA,W,CACA,e","file":"style.min.css","sourcesContent":["html * {\n  box-sizing: border-box;\n}\n\n.visually-hidden {\n  position: absolute;\n  clip: rect(0 0 0 0);\n  width: 1px;\n  height: 1px;\n  margin: -1px;\n  overflow: hidden;\n}\n"]}
