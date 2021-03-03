@@ -1,0 +1,68 @@
+.promo {
+  font-family: $font-main;
+}
+
+.promo h2 {
+  margin: 0;
+
+  font-family: $font-secondary;
+  font-size: 49px;
+  line-height: 49px;
+  text-transform: uppercase;
+}
+
+.promo__main {
+  color: $white;
+  background-color: $main-red;
+}
+
+.promo__main-description span:first-child {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 44px;
+}
+
+.promo__price {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 109px;
+}
+
+.promo__main-description p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.promo__main-description a {
+  border-bottom: 1px solid $white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.promo__list {
+  @include list-reset;
+}
+
+.promo__list h3 {
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.promo__list p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.promo__list a {
+  border-bottom: 1px solid $small-block-bg;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}

@@ -1,0 +1,30 @@
+.statement__text-wrapper p {
+  font-family: $font-main;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+}
+
+.statement span {
+  font-family: $font-secondary;
+  font-size: 49px;
+  font-weight: 400;
+  line-height: 59px;
+}
+
+.statement h2 {
+  margin: 0;
+
+  font-size: 109px;
+  font-weight: 700;
+  line-height: 109px;
+}
+
+.statement a {
+  font-family: $font-main;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  text-transform: uppercase;
+}

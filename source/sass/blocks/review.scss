@@ -1,0 +1,32 @@
+.review h2 {
+  margin: 0;
+
+  font-family: $font-secondary;
+  font-size: 49px;
+  line-height: 49px;
+  text-transform: uppercase;
+}
+
+.review__slider {
+  background-color: $small-block-bg;
+  color: $white;
+  box-shadow: $small-block-shadow;
+}
+
+.review__slider ul {
+  @include list-reset;
+
+  font-family: $font-main;
+}
+
+.review__slider h4 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.review__slider p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}

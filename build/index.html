@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="Description" content="SuperGym Фитнес центр в Омске">
+  <link rel="preload" href="fonts/bebasneue-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bebasneue-bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotocondensed-light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotocondensed-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotocondensed-bold.woff2" as="font" crossorigin="anonymous">
   <title>SuperGym</title>
   <link rel="stylesheet" href="css/style.min.css" type="text/css">
 </head>
@@ -14,7 +19,7 @@
   <header class="page-header">
     <nav class="page-header__nav">
       <a class="page-header__logo logo">
-        <img src="./img/logo.svg" width="68" height="15"><img>
+        <img src="./img/logo.svg" width="68" height="15" alt="FitnesGym лого">
       </a>
       <a href="tel:+78005555555" class="page-header__tel">
         <span>8-800-555-55-55</span>
@@ -22,8 +27,8 @@
     </nav>
     <section class="statement">
       <div class="statement__wrapper">
-        <span class="statement__city">Омск</span>
-        <h2 class="statement__header">Фитнес центр</h2>
+        <span>Омск</span>
+        <h2>Фитнес центр</h2>
         <div class="statement__text-wrapper">
           <p class="statement__text">Тренажёрный зал</p>
           <p class="statement__text">Групповые занятия</p>
@@ -35,13 +40,22 @@
     <div class="social">
       <ul class="social__list">
         <li class="social__item">
-          <a href="#">SuperGym на Facebook</a>
+          <a href="#">
+            <span class="visually-hidden">SuperGym на Facebook</span>
+            <svg></svg>
+          </a>
         </li>
         <li class="social__item">
-          <a href="#">SuperGym во Вконтакте</a>
+          <a href="#">
+            <span class="visually-hidden">SuperGym во Вконтакте</span>
+            <svg></svg>
+          </a>
         </li>
         <li class="social__item">
-          <a href="#">SuperGym в Instagram</a>
+          <a href="#">
+            <span class="visually-hidden">SuperGym в Instagram</span>
+            <svg></svg>
+          </a>
         </li>
       </ul>
     </div>
@@ -65,16 +79,16 @@
 
     <section class="subscription" id="subscription">
       <h2>Абонементы</h2>
-      <div class="subscription__controls">
+      <div class="subscription__controls controls">
         <ul>
           <li>
-            <a href="#">1 месяц</a>
+            <a href="#" class="controls__link controls__link--active">1 месяц</a>
           </li>
           <li>
-            <a href="#">6 месяцев</a>
+            <a href="#" class="controls__link">6 месяцев</a>
           </li>
           <li>
-            <a href="#">12 месяцев</a>
+            <a href="#" class="controls__link">12 месяцев</a>
           </li>
         </ul>
       </div>
@@ -113,13 +127,15 @@
               <span>7</span>
               <span>Марта 2019</span>
             </div>
-            <div>Время</div>
+            <p>Время</p>
             <span>12:00</span>
           </div>
           <p>Ежегодные соревнования по CrossFit</p>
           <a href="#">заполнить заявку</a>
         </div>
-        <div class="event__img"></div>
+        <div class="event__img">
+          <img src="./img/games-banner-desktop@1x.jpg" alt="">
+        </div>
       </div>
     </section>
 
@@ -218,7 +234,7 @@
           <div class="promo__main-block">
             <div class="promo__main-description">
               <span>Год</span>
-              <span>4999</span>
+              <span class="promo__price">4999</span>
               <p>Безлимитный абонемент в тренажерный зал</p>
               <a href="#">подробнее</a>
             </div>
@@ -245,14 +261,20 @@
       <div class="review__slider slider">
         <button type="button" class="slider__left-arrow" aria-label="листать влево"></button>
         <ul>
-          <li></li>
+          <li>
+            <img src="./img/userpic@1x.png" alt="Анна Орлова">
+            <div class="review__text">
+              <h4>Анна Орлова</h4>
+              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </div>
+          </li>
         </ul>
         <button type="button" class="slider__rigth-arrow" aria-label="листать вправо"></button>
       </div>
     </section>
 
     <div class="apply">
-      <form class="apply__form form" action="post">
+      <form class="apply__form form" action="https://echo.htmlacademy.ru">
         <h2>Бесплатное занятие</h2>
         <div>
           <label for="form-name" class="visually-hidden">Имя</label>
@@ -283,7 +305,7 @@
 
   <footer class="page-footer">
     <a class="page-footer__logo logo">
-      <img src="./img/logo.svg" width="68" height="15"><img>
+      <img src="./img/logo.svg" width="68" height="15" alt="FitnesGym лого">
     </a>
     <div class="sitemap">
       <ul>
@@ -307,13 +329,22 @@
     <div class="social">
       <ul class="social__list">
         <li class="social__item">
-          <a href="#">SuperGym на Facebook</a>
+          <a href="#">
+            <span class="visually-hidden">SuperGym на Facebook</span>
+            <svg></svg>
+          </a>
         </li>
         <li class="social__item">
-          <a href="#">SuperGym во Вконтакте</a>
+          <a href="#">
+            <span class="visually-hidden">SuperGym во Вконтакте</span>
+            <svg></svg>
+          </a>
         </li>
         <li class="social__item">
-          <a href="#">SuperGym в Instagram</a>
+          <a href="#">
+            <span class="visually-hidden">SuperGym в Instagram</span>
+            <svg></svg>
+          </a>
         </li>
       </ul>
     </div>

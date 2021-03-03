@@ -1,0 +1,48 @@
+.subscription h2 {
+  font-family: $font-secondary;
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 49px;
+}
+
+.subscription__tabs {
+  @include list-reset;
+
+  font-family: $font-main;
+}
+
+.subscription__tabs h3 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29px;
+}
+
+.subscription__tabs h4 {
+  color: $small-tab-h4;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.subscription__tabs p {
+  margin: 0;
+
+  color: $price-color;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 90px;
+}
+
+.subscription span {
+  color: $price-color-bg;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 150px;
+}
+
+.subscription a {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}

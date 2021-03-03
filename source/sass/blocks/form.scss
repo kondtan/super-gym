@@ -1,0 +1,36 @@
+.form input {
+  display: block;
+  background: transparent;
+  outline: none;
+
+  color: $white;
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  border: none;
+  border-radius: 0;
+
+  &::placeholder {
+    color: $white;
+
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.form button {
+  color: $white;
+  background-color: $main-blue;
+  border: 3px solid $white;
+
+  font-weight: 700;
+  font-family: $font-main;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}

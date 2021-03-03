@@ -1,0 +1,55 @@
+.event__wrapper {
+  color: $white;
+  background-color: $main-red;
+}
+
+.event__wrapper h2 {
+  margin: 0;
+
+  font-family: $font-secondary;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 90px;
+}
+
+.event__wrapper p {
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.event__date-block {
+  font-family: $font-main;
+}
+
+.event__date-block p {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.event__date-wrapper span:first-child,
+.event__date-block span {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.event__date-wrapper span:nth-child(2n) {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.event__wrapper a {
+  font-family: $font-secondary;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}

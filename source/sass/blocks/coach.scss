@@ -1,0 +1,39 @@
+.coach h2 {
+  margin: 0;
+
+  font-family: $font-secondary;
+  font-size: 49px;
+  line-height: 49px;
+  text-transform: uppercase;
+}
+
+.coach__list {
+  @include list-reset;
+
+  font-family: $font-main;
+}
+
+.coach__slider li {
+  color: $white;
+  background-color: $slider-hover-bg;
+}
+
+.coach__slider h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.coach__info {
+  list-style: unset;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.coach__info ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: inside;
+}
