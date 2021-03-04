@@ -5,6 +5,10 @@
   background: $main-gradient;
   font-family: $font-secondary;
 
+  @media (max-width: $tablet-width) {
+    padding-bottom: 82px;
+  }
+
   @media (max-width: $mobile-width) {
     padding-bottom: 57px;
   }
@@ -20,7 +24,7 @@
   flex-wrap: wrap;
 
   @media (max-width: $tablet-width) {
-    padding: 40px 45px 0;
+    padding: 40px 45px 23px;
     margin: 0;
   }
 

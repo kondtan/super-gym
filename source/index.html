@@ -85,15 +85,32 @@
 
     <section class="about">
       <div class="about__text-container">
-        <h2>Тренажёрный зал</h2>
+        <h2>Тренажерный зал</h2>
         <h3>Просторный зал площадью 900 кв/м</h3>
         <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-        <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+        <p class="about__more">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
       </div>
       <div class="about__media-container">
-        <img class="about__gym-img" src="./img/equipment-desktop@1x.jpg" alt="зал для тренировок" width="660px" height="401">
-        <div class="about__video-wrapper">
-          <img src="./img/video-desktop@1x.jpg" alt="видео с залом для тренировок">
+        <picture>
+          <source type="image/webp" media="(max-width: 320px)" srcset="./img/equipment-mobile@1x.webp 1x, ./img/equipment-mobile@2x.webp 2x">
+
+          <source type="image/webp" media="(max-width: 1199px)" srcset="./img/equipment-tablet@1x.webp 1x, ./img/equipment-tablet@2x.webp 2x">
+
+          <source type="image/webp" srcset="./img/equipment-desktop@1x.webp, ./img/equipment-desktop@2x.webp 2x">
+
+          <img class="about__gym-img" src="./img/equipment-desktop@1x.jpg" alt="зал для тренировок" width="660px" height="401">
+        </picture>
+        <div class="about__video-container">
+          <picture>
+
+            <source type="image/webp" media="(max-width: 320px)" srcset="./img/video-mobile@1x.webp 1x, ./img/video-mobile@2x.webp 2x">
+
+            <source type="image/webp" media="(max-width: 1199px)" srcset="./img/video-tablet@1x.webp 1x, ./img/video-tablet@2x.webp 2x">
+
+            <source type="image/webp" srcset="./img/video-desktop@1x.webp, ./img/video-desktop@2x.webp 2x">
+
+            <img src="./img/video-desktop@1x.jpg" alt="видео с залом для тренировок">
+          </picture>
           <button type="button" aria-label="запустить видео"></button>
         </div>
       </div>

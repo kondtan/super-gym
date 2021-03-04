@@ -19,7 +19,7 @@
 
 .statement__wrapper {
   width: 34%;
-  margin-right: 5.5%;
+  margin-right: 65px;
   padding: 112px 0 43px 4.7%;
 
   display: flex;
@@ -30,7 +30,7 @@
     width: 47.7%;
 
     margin-right: 4.4%;
-    padding: 71px 0 23px;
+    padding: 48px 0 23px;
   }
 
   @media (max-width: $mobile-width) {
@@ -42,12 +42,16 @@
   }
 }
 
-.statement picture {
-  display: flex;
+.statement__picture-container {
+  margin-top: -5px;
 
   @media (max-width: $mobile-width) {
     display: none;
   }
+}
+
+.statement picture {
+  display: flex;
 }
 
 .statement img {
@@ -59,7 +63,7 @@
 
 .statement__text-wrapper {
   width: 128px;
-  margin: -85px 265px 0 0;
+  margin: -96px 262px 0 0;
 
   display: flex;
   flex-flow: column;
@@ -77,7 +81,7 @@
   }
 
   @media (max-width: 938px) {
-    margin: -75px 211px 0 0;
+    margin: -84px 211px 0 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -145,7 +149,8 @@
 
 .statement a {
   width: 232px;
-  margin-top: 51px;
+  margin-top: 83px;
+  margin-right: -2px;
   padding: 19px 50px;
 
   display: block;
@@ -162,8 +167,8 @@
   @media (max-width: $tablet-width) {
     width: 185px;
 
-    margin-top: 36px;
-    margin-right: -5px;
+    margin-top: 57px;
+    margin-right: -2px;
     padding: 19px 25px;
   }
 
