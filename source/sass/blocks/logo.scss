@@ -1,0 +1,29 @@
+.logo {
+  width: 89px;
+  height: 20px;
+
+  @media (max-width: $tablet-width) {
+    width: 82px;
+    height: 17px;
+  }
+
+  @media (max-width: $mobile-min-width) {
+    width: 68px;
+    height: 15px;
+  }
+}
+
+.logo img {
+  width: 89px;
+  height: 20px;
+
+  @media (max-width: $tablet-width) {
+    width: 82px;
+    height: 17px;
+  }
+
+  @media (max-width: $mobile-min-width) {
+    width: 68px;
+    height: 15px;
+  }
+}

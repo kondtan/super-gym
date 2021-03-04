@@ -1,4 +1,98 @@
+.statement {
+  max-width: 1160px;
+  margin: 0 auto;
+
+  position: relative;
+
+  display: flex;
+  flex-flow: row wrap;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 13px;
+  }
+}
+
+.statement__wrapper {
+  width: 34%;
+  margin-right: 5.5%;
+  padding: 112px 0 43px 4.7%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @media (max-width: $tablet-width) {
+    width: 47.7%;
+
+    margin-right: 4.4%;
+    padding: 71px 0 23px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    margin-right: 0;
+    padding-top: 52px;
+
+    align-items: flex-end;
+  }
+}
+
+.statement picture {
+  display: flex;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.statement img {
+  @media (max-width: $tablet-width) {
+    width: 324px;
+    height: 390px;
+  }
+}
+
+.statement__text-wrapper {
+  width: 128px;
+  margin: -85px 265px 0 0;
+
+  display: flex;
+  flex-flow: column;
+
+  @media (max-width: $tablet-width) {
+    margin: -74px 211px 0 0;
+  }
+
+  @media (max-width: 1199px) and (min-width: 1024px) {
+    margin: 20px 316px 0 0;
+  }
+
+  @media (max-width: 1023px) {
+    margin: 4px 261px 0 0;
+  }
+
+  @media (max-width: 938px) {
+    margin: -75px 211px 0 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0 200px 0 0;
+  }
+
+  @media (max-width: 391px) {
+    margin: -74px 177px 0 0;
+  }
+}
+
 .statement__text-wrapper p {
+  margin: 0;
+
+  text-align: end;
   font-family: $font-main;
   font-size: 14px;
   font-weight: 400;
@@ -11,20 +105,72 @@
   font-size: 49px;
   font-weight: 400;
   line-height: 59px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 34px;
+    line-height: 41px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 28px;
+    line-height: 34px;
+  }
 }
 
-.statement h2 {
+.statement b {
   margin: 0;
+  margin-top: 8px;
 
+  text-align: end;
+  font-family: $font-secondary;
   font-size: 109px;
   font-weight: 700;
   line-height: 109px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 4px;
+
+    font-size: 86px;
+    line-height: 86px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    text-align: end;
+
+    font-size: 78px;
+    line-height: 78px;
+  }
 }
 
 .statement a {
+  width: 232px;
+  margin-top: 51px;
+  padding: 19px 50px;
+
+  display: block;
+
   font-family: $font-main;
   font-size: 12px;
   font-weight: 700;
   line-height: 14px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
+
+  border: 4px solid $white;
+
+  @media (max-width: $tablet-width) {
+    width: 185px;
+
+    margin-top: 36px;
+    margin-right: -5px;
+    padding: 19px 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    margin-top: 55px;
+    margin-right: 0;
+    text-align: center;
+  }
 }
