@@ -2,3 +2,18 @@
   color: $white;
   background-color: $footer-bg;
 }
+
+.page-footer__container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 49px 0;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding: 52px 5.8%;
+  }
+}

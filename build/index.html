@@ -56,11 +56,11 @@
       <div class="statement__picture-container">
         <picture>
 
-          <!-- <source type="image/webp" media="(max-width: 767px)" srcset="./img/hero-mobile@1x.webp 1x, ./img/hero-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 767px)" srcset="./img/hero-mobile@1x.webp 1x, ./img/hero-mobile@2x.webp 2x">
 
-          <source type="image/webp" media="(max-width: 1023px)" srcset="./img/hero-tablet@1x.webp 1x, ./img/hero-tablet@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1199px)" srcset="./img/hero-tablet@1x.webp 1x, ./img/hero-tablet@2x.webp 2x">
 
-          <source type="image/webp" srcset="./img/hero-desktop@1x.webp, ./img/hero-desktop@2x.webp 2x"> -->
+          <source type="image/webp" srcset="./img/hero-desktop@1x.webp, ./img/hero-desktop@2x.webp 2x">
 
           <img src="./img/hero-desktop@1x.jpg" srcset="./img/hero-desktop@2x.jpg 2x" alt="спорт герой" width="500" height="556">
         </picture>
@@ -84,16 +84,18 @@
   <main class="page-main">
 
     <section class="about">
-      <h2>Тренажёрный зал</h2>
-      <h3>Просторный зал площадью 900 кв/м</h3>
-      <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-      <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
-      <div class="about__img-container">
-        <img src="./img/equipment-desktop@1x.jpg" alt="зал для тренировок">
+      <div class="about__text-container">
+        <h2>Тренажёрный зал</h2>
+        <h3>Просторный зал площадью 900 кв/м</h3>
+        <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+        <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
       </div>
-      <div class="about__video-container">
-        <img src="./img/video-desktop@1x.jpg" alt="видео с залом для тренировок">
-        <button type="button" aria-label="запустить видео"></button>
+      <div class="about__media-container">
+        <img class="about__gym-img" src="./img/equipment-desktop@1x.jpg" alt="зал для тренировок" width="660px" height="401">
+        <div class="about__video-wrapper">
+          <img src="./img/video-desktop@1x.jpg" alt="видео с залом для тренировок">
+          <button type="button" aria-label="запустить видео"></button>
+        </div>
       </div>
     </section>
 
@@ -324,56 +326,59 @@
   </main>
 
   <footer class="page-footer">
-    <a class="page-footer__logo logo">
-      <img src="./img/logo.svg" width="68" height="15" alt="FitnesGym лого">
-    </a>
-    <div class="sitemap">
-      <ul>
-        <li>
-          <a href="#">Услуги</a>
-        </li>
-        <li>
-          <a href="#">Абонементы</a>
-        </li>
-        <li>
-          <a href="#">Акции</a>
-        </li>
-        <li>
-          <a href="#">Тренеры</a>
-        </li>
-        <li>
-          <a href="#">Расписание</a>
-        </li>
-      </ul>
+    <div class="page-footer__container">
+      <a class="page-footer__logo logo">
+        <img src="./img/logo.svg" width="68" height="15" alt="FitnesGym лого">
+      </a>
+      <div class="sitemap">
+        <ul>
+          <li>
+            <a href="#">Услуги</a>
+          </li>
+          <li>
+            <a href="#">Абонементы</a>
+          </li>
+          <li>
+            <a href="#">Акции</a>
+          </li>
+          <li>
+            <a href="#">Тренеры</a>
+          </li>
+          <li>
+            <a href="#">Расписание</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item social__item--vk">
+            <a href="#">
+              <span class="visually-hidden">SuperGym во Вконтакте</span>
+              <svg width="14" height="9">
+                <use xlink:href="#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item social__item--ig">
+            <a href="#">
+              <span class="visually-hidden">SuperGym в Instagram</span>
+              <svg width="11" height="9">
+                <use xlink:href="#ig"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item social__item--fb">
+            <a href="#">
+              <span class="visually-hidden">SuperGym на Facebook</span>
+              <svg width="13" height="9">
+                <use xlink:href="#fb"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a href="#">
-            <span class="visually-hidden">SuperGym на Facebook</span>
-            <svg width="13" height="9">
-              <use xlink:href="#fb"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="#">
-            <span class="visually-hidden">SuperGym во Вконтакте</span>
-            <svg width="14" height="9">
-              <use xlink:href="#vk"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="#">
-            <span class="visually-hidden">SuperGym в Instagram</span>
-            <svg width="11" height="9">
-              <use xlink:href="#ig"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
+
   </footer>
 
 </body>

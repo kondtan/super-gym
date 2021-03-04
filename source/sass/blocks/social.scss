@@ -1,3 +1,32 @@
 .social ul {
   @include list-reset;
+
+  width: auto;
+  max-width: 250px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.social__item {
+  margin-right: 25px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__item--vk svg {
+  width: 24px;
+  height: 13px;
+}
+
+.social__item--ig svg {
+  width: 24px;
+  height: 24px;
+}
+
+.social__item--fb svg {
+  width: 12px;
+  height: 24px;
 }

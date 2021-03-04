@@ -7,4 +7,14 @@
 
 .sitemap ul {
   @include list-reset;
+
+  width: 431px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }

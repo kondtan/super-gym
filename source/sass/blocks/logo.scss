@@ -2,6 +2,8 @@
   width: 89px;
   height: 20px;
 
+  display: block;
+
   @media (max-width: $tablet-width) {
     width: 82px;
     height: 17px;
