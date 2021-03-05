@@ -183,21 +183,33 @@
     <section class="event">
       <div class="event__container">
         <div class="event__wrapper">
-          <h2>SUPER GAMES</h2>
-          <div class="event__date-block">
-            <p>Дата</p>
-            <div class="event__date-wrapper">
-              <span>7</span>
-              <span>Марта 2019</span>
+          <div class="event__head">
+            <h2>SUPER GAMES</h2>
+            <div class="event__date-block">
+              <p>Дата</p>
+              <div class="event__date-wrapper">
+                <span>7</span>
+                <span>Марта 2019</span>
+              </div>
+              <p>Время</p>
+              <span class="event__hour">12:00</span>
             </div>
-            <p>Время</p>
-            <span>12:00</span>
           </div>
-          <p>Ежегодные соревнования по CrossFit</p>
+          <p class="event__subtitle">Ежегодные соревнования по CrossFit</p>
           <a href="#">заполнить заявку</a>
         </div>
         <div class="event__img">
-          <img src="./img/games-banner-desktop@1x.jpg" alt="">
+
+          <picture>
+            <source type="image/webp" media="(max-width: 320px)" srcset="./img/games-banner-mobile@1x.webp 1x, ./img/games-banner-mobile@2x.webp 2x">
+
+            <source type="image/webp" media="(max-width: 1199px)" srcset="./img/games-banner-tablet@1x.webp 1x, ./img/games-banner-tablet@2x.webp 2x">
+
+            <source type="image/webp" srcset="./img/games-banner-desktop@1x.webp, ./img/games-banner-desktop@2x.webp 2x">
+
+            <img src="./img/games-banner-desktop@1x.jpg" alt="super games промо" width="660px" height="500">
+          </picture>
+
         </div>
       </div>
     </section>
