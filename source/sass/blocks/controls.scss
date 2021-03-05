@@ -1,5 +1,19 @@
+.controls {
+  display: flex;
+  justify-content: center;
+}
+
 .controls ul {
   @include list-reset;
+
+  max-width: 1160px;
+
+  margin: 0 auto;
+  padding-bottom: 11px;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 
   font-family: $font-main;
   font-size: 20px;
@@ -7,6 +21,14 @@
   line-height: 30px;
 
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+
+.controls li {
+  margin-right: 46px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .controls__link {

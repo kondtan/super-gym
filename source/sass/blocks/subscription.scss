@@ -1,23 +1,92 @@
+.subscription {
+  padding-top: 121px;
+  padding-bottom: 120px;
+
+  position: relative;
+  background-color: $block-bg;
+
+  &::after {
+    width: 287px;
+    height: 494px;
+
+    position: absolute;
+    bottom: -103px;
+    right: 0;
+
+    content: "";
+    display: block;
+    background: url("../img/weights-desktop.png") no-repeat center;
+  }
+}
+
 .subscription h2 {
+  margin: 0;
+  margin-bottom: 32px;
+
+  text-align: center;
+
   font-family: $font-secondary;
   font-size: 49px;
   font-weight: 700;
   line-height: 49px;
+  letter-spacing: 0.03em;
+}
+
+.subscription__controls {
+  margin-bottom: 36px;
 }
 
 .subscription__tabs {
   @include list-reset;
 
+  max-width: 1160px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+
   font-family: $font-main;
 }
 
+.subscription__tabs li {
+  width: 360px;
+
+  padding-bottom: 68px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+
+  box-sizing: border-box;
+  background-color: $white;
+  border: 7px solid transparent;
+
+  z-index: 2;
+  text-align: center;
+
+  &:nth-child(3n),
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%) 3 40%;
+  }
+}
+
 .subscription__tabs h3 {
+  margin: 0;
+  margin-top: 57px;
+
   font-weight: 700;
   font-size: 26px;
   line-height: 29px;
 }
 
 .subscription__tabs h4 {
+  margin: 0;
+  margin-top: 10px;
+
   color: $small-tab-h4;
   font-size: 16px;
   font-weight: 400;
@@ -34,15 +103,53 @@
 }
 
 .subscription span {
+  display: block;
+  margin-bottom: -70px;
+  margin-top: 13px;
+
   color: $price-color-bg;
   font-weight: 700;
   font-size: 100px;
   line-height: 150px;
 }
 
-.subscription a {
+.subscription__price {
+  position: relative;
+  bottom: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 1;
+}
+
+.subscription__price p {
+  margin-right: 14px;
+}
+
+.subscription__tabs a {
+  width: 206px;
+  height: 64px;
+
+  padding: 23px 37px;
+  margin: 0 auto;
+  margin-top: 8px;
+
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid $main-blue;
+
+  font-weight: 700;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+
+.subscription__tabs li:hover a,
+.subscription__tabs a:focus {
+  color: $white;
+  border: transparent;
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 }
