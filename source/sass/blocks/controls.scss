@@ -33,6 +33,10 @@
   @media (max-width: $tablet-width) {
     margin-right: 54px;
   }
+
+  @media (max-width: $mobile-min-width) {
+    margin-right: 45px;
+  }
 }
 
 .controls__link {
