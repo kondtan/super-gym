@@ -1,0 +1,31 @@
+.slider {
+  position: relative;
+}
+
+.slider__button {
+  width: 30px;
+  height: 100%;
+  padding: 0;
+
+  position: absolute;
+  top: 0;
+
+  content: "";
+  border: none;
+  cursor: pointer;
+}
+
+.slider__button--prev {
+  left: -57px;
+  background: url("../img/icon-arrow-left.svg") no-repeat 50%;
+}
+
+.slider__button--next {
+  position: absolute;
+  right: -57px;
+  background: url("../img/icon-arrow-right.svg") no-repeat 50%;
+}
+
+.no-js {
+  display: none;
+}
