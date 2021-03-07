@@ -2,9 +2,23 @@
   font-family: $font-main;
 }
 
+.promo__container {
+  max-width: 1160px;
+  margin: 0 auto;
+
+  display: flex;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 45px;
+
+    flex-direction: column;
+  }
+}
+
 .promo h2 {
   margin: 0;
 
+  text-align: center;
   font-family: $font-secondary;
   font-size: 49px;
   line-height: 49px;
@@ -12,11 +26,54 @@
 }
 
 .promo__main {
+  width: 560px;
+  height: 100%;
+
+  margin-right: 40px;
+
+  display: flex;
+
   color: $white;
   background-color: $main-red;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
+}
+
+.promo__main-description {
+  @media (max-width: $mobile-width) {
+    min-height: 299px;
+
+    text-align: center;
+  }
+}
+
+.promo__main img {
+  width: 280px;
+  height: 100%;
+
+  @media (max-width: $mobile-width) {
+    min-height: 299px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 399px;
+  }
 }
 
 .promo__main-description span:first-child {
+  width: 100%;
+
+  display: block;
+
   font-weight: 700;
   font-size: 28px;
   line-height: 44px;
@@ -44,20 +101,76 @@
 
 .promo__list {
   @include list-reset;
+
+  width: 560px;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
+}
+
+.promo__list li {
+  padding: 35px 35px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 7px solid transparent;
+  border-image: linear-gradient(97.05deg, #d10a42, 73%, #00359f 95.31%) 2 40%;
+
+  @media (max-width: $tablet-width) {
+    width: calc(50% - 30px);
+    min-height: 211px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    margin-bottom: 30px;
+
+    text-align: center;
+  }
+}
+
+.promo__list li:nth-of-type(2n) {
+  margin-top: 47px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .promo__list h3 {
+  margin: 0;
+
   font-weight: 700;
   font-size: 26px;
 }
 
 .promo__list p {
+  margin-bottom: 0;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
 }
 
 .promo__list a {
+  max-width: 100%;
+  width: min-content;
+
+  margin-top: 50px;
+
+  display: block;
   border-bottom: 1px solid $small-block-bg;
 
   font-weight: 700;
@@ -65,4 +178,8 @@
   line-height: 14px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+
+  @media (max-width: $mobile-width) {
+    margin: 48px auto;
+  }
 }
