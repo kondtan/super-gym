@@ -1,6 +1,14 @@
 .coach {
-  padding: 113px 103px 0;
+  padding: 113px 103px 78px;
   margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 94px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 63px 0 0;
+  }
 }
 
 .coach h2 {
@@ -14,6 +22,21 @@
   line-height: 49px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 39px;
+    text-align: center;
+
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 42px;
+
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 
 .coach__list {
@@ -28,6 +51,10 @@
   position: relative;
 
   font-family: $font-main;
+
+  @media (max-width: $tablet-width) {
+    justify-content: center;
+  }
 }
 
 .coach__list--no-js {
@@ -49,6 +76,24 @@
   &:nth-child(4n) {
     margin-right: 0;
   }
+
+  @media (max-width: $tablet-width) {
+    width: 268px;
+    height: 294px;
+    margin-right: 30px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 226px;
+    min-height: 274px;
+    height: 274px;
+
+    margin-right: 0;
+  }
 }
 
 .coach__item:hover {
@@ -64,6 +109,11 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 245px;
+    margin-left: 10px;
+  }
 }
 
 .coach__list img {
@@ -74,6 +124,10 @@
   top: 0;
   left: 0;
   z-index: -1;
+
+  @media (max-width: $tablet-width) {
+    object-fit: cover;
+  }
 }
 
 .coach__info {

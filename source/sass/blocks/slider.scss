@@ -17,13 +17,23 @@
 
 .slider__button--prev {
   left: -57px;
-  background: url("../img/icon-arrow-left.svg") no-repeat 50%;
+  background: url("../img/icon-big-prev.svg") no-repeat 20% 43%;
+
+  @media (max-width: $mobile-width) {
+    left: -3px;
+    background: url("../img/icon-small-prev.svg") no-repeat 92% 43%;
+  }
 }
 
 .slider__button--next {
   position: absolute;
   right: -57px;
-  background: url("../img/icon-arrow-right.svg") no-repeat 50%;
+  background: url("../img/icon-big-next.svg") no-repeat 92% 43%;
+
+  @media (max-width: $mobile-width) {
+    right: 14px;
+    background: url("../img/icon-small-next.svg") no-repeat 92% 43%;
+  }
 }
 
 .no-js {
