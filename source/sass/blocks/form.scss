@@ -1,4 +1,31 @@
+.form h2 {
+  margin: 0;
+  margin-bottom: 27px;
+
+  font-family: $font-secondary;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 64px;
+  letter-spacing: 0.03em;
+
+  @media (max-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 32px;
+
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
 .form input {
+  width: 46.3%;
+  padding: 7px 0 5px;
+  margin-bottom: 29px;
+
   display: block;
   background: transparent;
   outline: none;
@@ -12,6 +39,28 @@
   border: none;
   border-radius: 0;
 
+  border-radius: 0;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #74819C;
+
+  &:nth-of-type(2n){
+    margin-left: 30px;
+
+    @media (max-width: $tablet-width) {
+      margin-left: 60px;
+    }
+
+    @media (max-width: $mobile-width) {
+      margin-left: 0;
+    }
+  }
+
+  &:last-child {
+    @media (max-width: $mobile-width) {
+      margin-bottom: 38px;
+    }
+  }
+
   &::placeholder {
     color: $white;
 
@@ -20,9 +69,18 @@
     font-size: 14px;
     line-height: 16px;
   }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    min-width: 290px;
+    flex-wrap: wrap;
+  }
 }
 
 .form button {
+  width: 100%;
+  padding: 17px;
+
   color: $white;
   background-color: $main-blue;
   border: 3px solid $white;
@@ -33,4 +91,6 @@
   line-height: 16px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+
+  cursor: pointer;
 }

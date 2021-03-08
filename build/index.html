@@ -65,6 +65,7 @@
       </a>
     </nav>
     <section class="statement">
+      <h2 class="visually-hidden"></h2>
       <div class="statement__wrapper">
         <span>Омск</span>
         <b>Фитнес центр</b>
@@ -226,7 +227,7 @@
 
             <source type="image/webp" srcset="./img/games-banner-desktop@1x.webp, ./img/games-banner-desktop@2x.webp 2x">
 
-            <img src="./img/games-banner-desktop@1x.jpg" alt="super games промо" width="660px" height="500">
+            <img src="./img/games-banner-desktop@1x.jpg" alt="super games промо" width="660" height="500">
           </picture>
 
         </div>
@@ -498,50 +499,56 @@
 
     <section class="review">
       <h2>Отзывы</h2>
-      <div class="review__slider slider">
-        <button type="button" class="slider__left-arrow" aria-label="листать влево"></button>
+      <div class="review__wrapper">
         <ul>
           <li>
-            <img src="./img/userpic@1x.png" alt="Анна Орлова">
-            <div class="review__text">
+            <div class="review__client">
+              <img src="./img/userpic@1x.png" alt="Анна Орлова">
               <h4>Анна Орлова</h4>
-              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
-                дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
             </div>
+            <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
+              дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
           </li>
         </ul>
-        <button type="button" class="slider__rigth-arrow" aria-label="листать вправо"></button>
+        <button type="button" class="review__button review__button--prev" aria-label="листать влево"></button>
+        <button type="button" class="review__button review__button--next" aria-label="листать вправо"></button>
       </div>
     </section>
 
-    <div class="apply">
-      <form class="apply__form form" action="https://echo.htmlacademy.ru">
-        <h2>Бесплатное занятие</h2>
-        <div>
-          <label for="form-name" class="visually-hidden">Имя</label>
-          <input type="text" id="form-name" placeholder="Имя" required="">
-          <label for="tel" class="visually-hidden">Телефон</label>
-          <input type="tel" id="tel" name="tel" placeholder="Телефон" pattern="((8|\+7)-?)?\(?\d{3}\)?-?\d{1}-?\d{1}-?\d{1}-?\d{1}-?\d{1}-?\d{1}-?\d{1}" required="">
+    <div class="page-main__bottom-wrapper">
+      <div class="apply">
+        <form class="apply__form form" action="https://echo.htmlacademy.ru">
+          <h2>Бесплатное занятие</h2>
+          <div class="apply__input-container">
+            <label for="form-name" class="visually-hidden">Имя</label>
+            <input type="text" id="form-name" placeholder="Имя" required="">
+            <label for="tel" class="visually-hidden">Телефон</label>
+            <input type="tel" id="tel" name="tel" placeholder="Телефон" pattern="((8|\+7)-?)?\(?\d{3}\)?-?\d{1}-?\d{1}-?\d{1}-?\d{1}-?\d{1}-?\d{1}-?\d{1}" required="">
+          </div>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+
+      <div class="contact">
+        <h2>Контакты</h2>
+        <div class="contact__wrapper">
+          <div class="contact__address">
+            <h3>Адрес:</h3>
+            <p>г. Омск, ул. 60 лет Октября, 7</p>
+            <h3>График работы:</h3>
+            <p>Пн-Вс: с 8:00 до 22:00</p>
+          </div>
+          <div class="contact__online">
+            <h3>Телефон:</h3>
+            <p>8-800-555-55-55</p>
+            <h3>Email:</h3>
+            <p>omsk@supergym.ru</p>
+          </div>
         </div>
-        <button type="submit">Отправить</button>
-      </form>
+      </div>
+
     </div>
 
-    <div class="contact">
-      <h2>Контакты</h2>
-      <div class="contact__address">
-        <h3>Адрес:</h3>
-        <p>г. Омск, ул. 60 лет Октября, 7</p>
-        <h3>График работы:</h3>
-        <p>Пн-Вс: с 8:00 до 22:00</p>
-      </div>
-      <div class="contact__online">
-        <h3>Телефон:</h3>
-        <p>8-800-555-55-55</p>
-        <h3>Email:</h3>
-        <p>omsk@supergym.ru</p>
-      </div>
-    </div>
   </main>
 
   <footer class="page-footer">

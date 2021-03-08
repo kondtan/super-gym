@@ -3,18 +3,40 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
 .sitemap ul {
   @include list-reset;
 
   width: 431px;
+  padding-top: 4px;
+  margin-left: 22px;
+
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 
   @media (max-width: $mobile-width) {
+    width: 100%;
+    flex-direction: column;
+
     font-size: 16px;
     line-height: 19px;
+  }
+}
+
+.sitemap li {
+  margin-left: 40px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
   }
 }

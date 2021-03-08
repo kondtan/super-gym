@@ -1,14 +1,33 @@
 .apply {
+  width: 50%;
+
   color: $white;
   background-color: $main-blue;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
-.apply h2 {
-  margin: 0;
+.apply__form {
+  max-width: 683px;
 
-  font-family: $font-secondary;
-  font-weight: 700;
-  font-size: 49px;
-  line-height: 64px;
-  letter-spacing: 0.03em;
+  margin: 0 auto;
+  padding: 63px 170px 67px 103px;
+
+  @media (max-width: $tablet-width) {
+    padding: 71px 119px 66px 89px;
+  }
+
+  @media (max-width: $mobile-min-width) {
+    padding: 70px 15px 68px;
+  }
+}
+
+.apply__input-container {
+  display: flex;
+
+  @media (max-width: $mobile-width) {
+    flex-wrap: wrap;
+  }
 }
