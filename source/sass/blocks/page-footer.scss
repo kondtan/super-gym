@@ -27,10 +27,8 @@
   }
 
   @media (max-width: $mobile-min-width) {
-    padding: 46px 15px;
-
-    width: 82px;
-    height: 18px;
+    width: 100%;
+    padding: 45px 15px;
   }
 }
 
@@ -38,5 +36,19 @@
   @media (max-width: $mobile-width) {
     width: 100%;
     margin-right: 0;
+  }
+}
+
+.page-footer__logo--desktop {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.page-footer__logo--mobile {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
   }
 }

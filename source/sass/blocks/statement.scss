@@ -164,6 +164,11 @@
 
   border: 4px solid $white;
 
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
   @media (max-width: $tablet-width) {
     width: 185px;
 

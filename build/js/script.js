@@ -15,7 +15,6 @@
   var reviewNext = reviewBlock.querySelector('.review__button--next');
   var reviewPrev = reviewBlock.querySelector('.review__button--prev');
 
-
   // переключаем слайды в нужном количестве
 
   function switchSlider(step, slides, prev, next) {
@@ -65,6 +64,8 @@
     }
   }
 
+  // если есть слайдер с тренерами, убираем условия отображения без JS и листаем слайды
+
   if (coachBlock) {
     prevButton.classList.remove('no-js');
     nextButton.classList.remove('no-js');
@@ -72,6 +73,8 @@
     changeCoachSlider();
     window.addEventListener('resize', changeCoachSlider);
   }
+
+  // если есть отзывы, листаем по одному
 
   if (reviewBlock) {
     reviewPrev.classList.remove('no-js');

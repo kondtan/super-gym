@@ -193,6 +193,11 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
   @media (max-width: $tablet-width) {
     padding: 12px 15px;
 

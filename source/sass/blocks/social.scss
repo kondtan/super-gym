@@ -27,13 +27,14 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-right: 33px;
+    margin-right: 35px;
   }
 }
 
-// .social__item a {
-//   width: 100%;
-// }
+.social__item a:hover svg,
+.social__item a:focus svg {
+  opacity: 0.5;
+}
 
 .social__item--vk {
   margin-top: 4px;

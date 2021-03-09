@@ -17,7 +17,6 @@
   flex-wrap: wrap;
 
   @media (max-width: $tablet-width) {
-    // width: 64%;
     margin-left: 0;
     flex-wrap: nowrap;
   }
@@ -44,10 +43,6 @@
     margin-left: 0;
   }
 
-  @media (max-width: $tablet-width) {
-    // margin-right: 30px;
-  }
-
   @media (max-width: $mobile-width) {
     width: 43%;
     margin-left: 0;
@@ -56,6 +51,24 @@
     &:first-child {
       order: -2;
     }
+  }
+
+  @media (max-width: $mobile-min-width) {
+    &:nth-child(2n) {
+      margin-left: 35px;
+    }
+
+    &:nth-child(2) {
+      margin-left: 0;
+      margin-right: 35px;
+    }
+  }
+}
+
+.sitemap__item a {
+  &:hover,
+  &:focus {
+    opacity: 0.5;
   }
 }
 
@@ -70,6 +83,10 @@
   @media (max-width: $mobile-width) {
     margin-bottom: 21px;
     order: 2;
+  }
+
+  @media (max-width: $mobile-min-width) {
+    margin-left: 0;
   }
 }
 
