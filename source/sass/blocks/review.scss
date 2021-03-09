@@ -64,13 +64,13 @@
   }
 }
 
-.review__wrapper ul {
+.review__list {
   @include list-reset;
 
   font-family: $font-main;
 }
 
-.review__wrapper li {
+.review__list li {
   display: block;
 
   @media (max-width: $tablet-width) {
@@ -85,6 +85,8 @@
 }
 
 .review__client {
+  // position: relative;
+
   @media (max-width: $mobile-width) {
     display: flex;
   }
