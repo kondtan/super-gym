@@ -3,10 +3,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-
-  @media (max-width: $mobile-width) {
-    width: 100%;
-  }
 }
 
 .sitemap ul {
@@ -20,23 +16,78 @@
   justify-content: flex-start;
   flex-wrap: wrap;
 
+  @media (max-width: $tablet-width) {
+    // width: 64%;
+    margin-left: 0;
+    flex-wrap: nowrap;
+  }
+
   @media (max-width: $mobile-width) {
     width: 100%;
-    flex-direction: column;
+    margin-left: 0;
+
+    flex-flow: row wrap;
 
     font-size: 16px;
     line-height: 19px;
   }
 }
 
-.sitemap li {
+.sitemap__item {
   margin-left: 40px;
 
-  &:first-child {
+  //обнуляем левый марджин 1му видимому элементу
+
+  &:first-child,
+  &:nth-child(2),
+  &:nth-child(7n) {
     margin-left: 0;
   }
 
+  @media (max-width: $tablet-width) {
+    // margin-right: 30px;
+  }
+
   @media (max-width: $mobile-width) {
+    width: 43%;
     margin-left: 0;
+    margin-bottom: 18px;
+
+    &:first-child {
+      order: -2;
+    }
+  }
+}
+
+.sitemap__item--promo {
+  @media (max-width: $mobile-width) {
+    margin-top: -3px;
+    order: 1;
+  }
+}
+
+.sitemap__item--services {
+  @media (max-width: $mobile-width) {
+    margin-bottom: 21px;
+    order: 2;
+  }
+}
+
+.sitemap__item--coaches {
+  @media (max-width: $mobile-width) {
+    margin-bottom: 21px;
+    order: 3;
+  }
+}
+
+.sitemap__item--subscriptions {
+  @media (max-width: $mobile-width) {
+    order: 4;
+  }
+}
+
+.sitemap__item--schedule {
+  @media (max-width: $mobile-width) {
+    order: 5;
   }
 }

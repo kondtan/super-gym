@@ -9,9 +9,25 @@
     height: 17px;
   }
 
-  @media (max-width: $mobile-min-width) {
+  @media (max-width: $mobile-width) {
     width: 68px;
     height: 15px;
+  }
+}
+
+.logo--desktop {
+  // padding-right: 70.4%;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.logo--mobile {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
   }
 }
 

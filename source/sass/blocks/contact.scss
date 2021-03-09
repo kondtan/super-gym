@@ -2,7 +2,7 @@
   width: 50%;
   padding: 63px 0 45px 120px;
 
-  border-top: 1px solid #74819C;
+  border-top: 1px solid $gray-blue;
   font-family: $font-main;
 
   @media (max-width: $tablet-width) {
@@ -77,7 +77,7 @@
   display: flex;
   flex-direction: column;
 
-  border-right: 1px solid #74819C;
+  border-right: 1px solid $gray-blue;
 
   @media (max-width: $tablet-width) {
     width: 267px;

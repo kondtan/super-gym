@@ -25,12 +25,18 @@
 
     padding: 45px;
   }
+
+  @media (max-width: $mobile-min-width) {
+    padding: 46px 15px;
+
+    width: 82px;
+    height: 18px;
+  }
 }
 
 .page-footer__logo {
   @media (max-width: $mobile-width) {
     width: 100%;
     margin-right: 0;
-    padding-right: 70.4697%;
   }
 }

@@ -8,6 +8,11 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 18px;
+    justify-content: flex-start;
+  }
 }
 
 .social__item {
@@ -17,10 +22,18 @@
     margin-right: 0;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     margin-right: 20px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-right: 33px;
+  }
 }
+
+// .social__item a {
+//   width: 100%;
+// }
 
 .social__item--vk {
   margin-top: 4px;
@@ -29,14 +42,29 @@
 .social__item--vk svg {
   width: 24px;
   height: 13px;
+
+  @media (max-width: $mobile-width) {
+    width: 32px;
+    height: 18px;
+  }
 }
 
 .social__item--ig svg {
   width: 24px;
   height: 24px;
+
+  @media (max-width: $mobile-width) {
+    width: 27px;
+    height: 27px;
+  }
 }
 
 .social__item--fb svg {
   width: 12px;
   height: 24px;
+
+  @media (max-width: $mobile-width) {
+    width: 14px;
+    height: 27px;
+  }
 }
