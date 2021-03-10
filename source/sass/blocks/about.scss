@@ -181,6 +181,11 @@
   }
 }
 
+.about__video-container img {
+  width: 100%;
+  height: auto;
+}
+
 .about__video-container button {
   width: 100px;
   height: 100px;
@@ -195,6 +200,12 @@
   cursor: pointer;
   border-radius: 50%;
   outline: 0;
+
+  &:hover,
+  &:focus {
+    transition: opacity 2s ease-out;
+    opacity: 0.6;
+  }
 
   @media (max-width: $tablet-width) {
     background-size: 72%;

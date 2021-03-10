@@ -40,7 +40,13 @@
 }
 
 .controls__link {
+  padding-bottom: 14px;
   color: $inactive-control;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
 
   @media (max-width: $tablet-width) {
     font-size: 18px;
@@ -54,5 +60,6 @@
 }
 
 .controls__link--active {
+  border-bottom: 2px solid #d10a42;
   color: $main-blue;
 }

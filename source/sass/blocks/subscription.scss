@@ -17,8 +17,9 @@
 
   @media (max-width: $tablet-width) {
     &::after {
+      width: 348px;
+
       bottom: -91px;
-      right: 31px;
 
       background: url("../img/weights-tablet.png") no-repeat center;
     }
@@ -226,6 +227,7 @@
   width: 30px;
   height: 42px;
 
+
   @media (max-width: $mobile-min-width) {
     width: 24px;
     height: 33px;
@@ -234,7 +236,6 @@
 
 .subscription__tabs a {
   width: 206px;
-  height: 64px;
 
   padding: 23px 37px;
   margin: 0 auto;
@@ -258,6 +259,8 @@
 .subscription__tabs li:hover a,
 .subscription__tabs a:focus {
   color: $white;
-  border: transparent;
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  border: 2px solid transparent;
+  border-left: none;
+  border-right: none;
 }

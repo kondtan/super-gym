@@ -19,6 +19,8 @@
 
 .statement__wrapper {
   width: 34%;
+  max-width: 400px;
+
   margin-right: 65px;
   padding: 112px 0 43px 4.7%;
 
@@ -50,11 +52,9 @@
   }
 }
 
-.statement picture {
-  display: flex;
-}
-
 .statement img {
+  display: block;
+
   @media (max-width: $tablet-width) {
     width: 324px;
     height: 390px;

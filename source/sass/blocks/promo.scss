@@ -31,7 +31,7 @@
 
 .promo h2 {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 49px;
 
   text-align: center;
   font-family: $font-secondary;
@@ -57,6 +57,7 @@
 
 .promo__main {
   width: 560px;
+  min-height: 462px;
   height: 100%;
 
   margin-right: 40px;
@@ -71,6 +72,8 @@
 
     margin-right: 0;
     margin-bottom: 30px;
+
+    justify-content: space-between;
   }
 
   @media (max-width: $mobile-width) {
@@ -93,6 +96,7 @@
   height: 100%;
 
   display: block;
+  object-fit: cover;
 
   @media (max-width: $tablet-width) {
     width: 399px;
@@ -169,6 +173,7 @@
 
 .promo__list li {
   padding: 20px 28px;
+  margin-bottom: 39px;
 
   display: flex;
   flex-direction: column;
@@ -176,9 +181,18 @@
   border: 7px solid transparent;
   border-image: linear-gradient(97.05deg, #d10a42, 73%, #00359f 95.31%) 2 40%;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   @media (max-width: $tablet-width) {
     width: calc(52% - 30px);
     min-height: 211px;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 30px;
+    }
   }
 
   @media (max-width: $mobile-width) {
@@ -197,14 +211,6 @@
 
   @media (max-width: $mobile-width) {
     padding-right: 28px;
-  }
-}
-
-.promo__list li:nth-of-type(2n) {
-  margin-top: 41px;
-
-  @media (max-width: $tablet-width) {
-    margin-top: 0;
   }
 }
 
@@ -237,6 +243,7 @@
 
   margin-top: 71px;
   margin-bottom: 9px;
+  padding-bottom: 2px;
 
   display: block;
   border-bottom: 1px solid $small-block-bg;

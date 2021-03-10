@@ -40,14 +40,12 @@
 .page-header__tel {
   margin-left: 20px;
 
-}
-
-.page-header__tel {
   &:hover,
   &:focus {
     opacity: 0.5;
   }
 }
+
 .page-header__tel span {
   font-size: 26px;
   line-height: 26px;
@@ -67,7 +65,7 @@
 
 .page-header__social {
   position: absolute;
-  bottom: 84px;
+  bottom: 103px;
   right: 102px;
 
   font-family: $font-main;

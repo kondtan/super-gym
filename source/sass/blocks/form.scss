@@ -44,7 +44,6 @@
   &:hover,
   &:focus {
     border-bottom: 1px solid $white;
-
   }
 
   &:nth-of-type(2n) {
@@ -76,7 +75,6 @@
 
   @media (max-width: $mobile-width) {
     width: 100%;
-    min-width: 290px;
     flex-wrap: wrap;
   }
 }

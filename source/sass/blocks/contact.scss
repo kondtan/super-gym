@@ -72,6 +72,7 @@
 
 .contact__address {
   width: 235px;
+  height: 100%;
   padding-left: 4px;
 
   display: flex;
@@ -90,8 +91,16 @@
   }
 }
 
+.contact__address p:last-child {
+  margin-bottom: 0;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
+}
+
 .contact__online {
-  margin-left: 60px;
+  margin-left: 58px;
 
   @media (max-width: $tablet-width) {
     margin-left: 47px;
@@ -102,7 +111,17 @@
   }
 }
 
-.contact p {
+.contact__online a {
+  display: block;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}
+
+.contact p,
+.contact__online a {
   margin: 0;
   margin-bottom: 19px;
 

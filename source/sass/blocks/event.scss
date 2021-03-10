@@ -39,6 +39,7 @@
 }
 
 .event__head {
+  height: auto;
   display: flex;
 
   @media (max-width: $tablet-width) {
@@ -66,6 +67,7 @@
 }
 
 .event__date-block {
+  height: 100%;
   margin-top: -7px;
 
   font-family: $font-main;
@@ -156,12 +158,13 @@
 
 .event__hour {
   margin-top: -7px;
+  line-height: 44px;
 
   display: block;
 }
 
 .event__subtitle {
-  margin-top: 8px;
+  margin-top: -13px;
   margin-bottom: 0;
 
   font-family: $font-main;
