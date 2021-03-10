@@ -3,17 +3,15 @@
 (function () {
 
   var coachBlock = document.querySelector('.coach');
-  var slider = document.querySelector('.slider');
-  var coachList = slider.querySelector('.coach__list');
-  var coachSlides = slider.querySelectorAll('.coach__item');
-  var nextButton = slider.querySelector('.slider__button--next');
-  var prevButton = slider.querySelector('.slider__button--prev');
+  var coachList = document.querySelector('.coach__list');
+  var coachSlides = document.querySelectorAll('.coach__item');
+  var nextButton = document.querySelector('.slider__button--next');
+  var prevButton = document.querySelector('.slider__button--prev');
 
   var reviewBlock = document.querySelector('.review');
-  var reviewList = reviewBlock.querySelector('.review__list');
-  var reviewSlides = reviewList.querySelectorAll('.review__item');
-  var reviewNext = reviewBlock.querySelector('.review__button--next');
-  var reviewPrev = reviewBlock.querySelector('.review__button--prev');
+  var reviewSlides = document.querySelectorAll('.review__item');
+  var reviewNext = document.querySelector('.review__button--next');
+  var reviewPrev = document.querySelector('.review__button--prev');
 
   // переключаем слайды в нужном количестве
 
