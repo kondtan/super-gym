@@ -17,10 +17,8 @@
   flex-wrap: wrap;
 
   @media (max-width: $tablet-width) {
-    width: auto;
-    padding-left: 16px;
+    padding-left: 28px;
     margin-left: 0;
-    flex-wrap: nowrap;
   }
 
   @media (max-width: $mobile-width) {
