@@ -9,7 +9,6 @@
   var prevButton = document.querySelector('.slider__button--prev');
 
   var reviewBlock = document.querySelector('.review');
-  var reviewSlides = document.querySelectorAll('.review__item');
   var reviewNext = document.querySelector('.review__button--next');
   var reviewPrev = document.querySelector('.review__button--prev');
 
@@ -77,7 +76,18 @@
   if (reviewBlock) {
     reviewPrev.classList.remove('no-js');
     reviewNext.classList.remove('no-js');
-    switchSlider(1, reviewSlides, reviewPrev, reviewNext);
   }
 
+  var Swiper;
+  var reviewSwiper = new Swiper('.review__wrapper', {
+    loop: true,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    navigation: {
+      nextEl: '.review__button--next',
+      prevEl: '.review__button--prev',
+    }
+  });
+
+  reviewSwiper();
 })();
