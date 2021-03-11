@@ -3,14 +3,12 @@
 (function () {
 
   var coachBlock = document.querySelector('.coach');
-  var slider = document.querySelector('.slider');
   var coachList = document.querySelector('.coach__list');
   var coachSlides = document.querySelectorAll('.coach__item');
   var nextButton = document.querySelector('.slider__button--next');
   var prevButton = document.querySelector('.slider__button--prev');
 
   var reviewBlock = document.querySelector('.review');
-  var reviewList = document.querySelector('.review__list');
   var reviewSlides = document.querySelectorAll('.review__item');
   var reviewNext = document.querySelector('.review__button--next');
   var reviewPrev = document.querySelector('.review__button--prev');
