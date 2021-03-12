@@ -8,6 +8,7 @@
 
   @media (max-width: $tablet-width) {
     padding-top: 70px;
+    padding-bottom: 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -172,11 +173,13 @@
   cursor: pointer;
 
   @media (max-width: $tablet-width) {
-    top: 24.5%;
+    height: 62%;
+    top: 38.5%;
   }
 
   @media (max-width: $mobile-width) {
     height: 60%;
+    top: 24.5%;
   }
 }
 

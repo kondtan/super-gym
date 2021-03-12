@@ -14,6 +14,23 @@
   }
 }
 
+.coach__slider {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  position: relative;
+  flex-flow: row;
+
+  overflow: hidden;
+  z-index: 1;
+
+  @media (max-width: $mobile-width) {
+    width: 226px;
+    height: 274px;
+  }
+}
+
 .coach h2 {
   margin: 0;
   margin-left: 2px;
@@ -183,4 +200,60 @@
   color: #b6bdcc;
   font-size: 16px;
   line-height: 19px;
+}
+
+.coach__button {
+  width: 30px;
+  height: 294px;
+  padding: 0;
+
+  position: absolute;
+  top: 36.7%;
+
+  content: "";
+  border: none;
+  cursor: pointer;
+
+  outline: none;
+
+  @media (max-width: $tablet-width) {
+    top: 33.7%;
+  }
+
+  @media (max-width: $mobile-min-width) {
+    height: 264px;
+  }
+}
+
+.coach__button--prev {
+  left: 3.1%;
+  background: url("../img/icon-big-prev.svg") no-repeat 20% 43%;
+
+  @media (max-width: $tablet-width) {
+    left: 5.1%;
+  }
+
+  @media (max-width: $mobile-width) {
+    left: -3px;
+    background: url("../img/icon-small-prev.svg") no-repeat 92% 43%;
+  }
+}
+
+.coach__button--next {
+  position: absolute;
+  right: 3.2%;
+  background: url("../img/icon-big-next.svg") no-repeat 92% 43%;
+
+  @media (max-width: $tablet-width) {
+    right: 6%;
+  }
+
+  @media (max-width: $mobile-width) {
+    right: 14px;
+    background: url("../img/icon-small-next.svg") no-repeat 92% 43%;
+  }
+}
+
+.no-js {
+  display: none;
 }

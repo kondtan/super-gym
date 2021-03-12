@@ -11,7 +11,7 @@
     reviewNext.classList.remove('no-js');
   }
 
-  var reviewSwiper = new Swiper('.review__wrapper', {
+  var reviewSwiper = new Swiper('.review__wrapper', { // eslint-disable-line
     loop: true,
     slidesPerView: 1,
     slidesPerGroup: 1,
