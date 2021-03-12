@@ -89,6 +89,14 @@
 }
 
 .subscription__tabs {
+  display: none;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.subscription__tabs--active {
   @include list-reset;
 
   max-width: 1160px;

@@ -113,57 +113,137 @@
     <section class="subscription" id="subscription">
       <div class="subscription__wrapper">
         <h2>Абонементы</h2>
-        <div class="subscription__controls controls">
-          <ul>
-            <li>
-              <a href="#" class="controls__link controls__link--active">1 месяц</a>
-            </li>
-            <li>
-              <a href="#" class="controls__link">6 месяцев</a>
-            </li>
-            <li>
-              <a href="#" class="controls__link">12 месяцев</a>
-            </li>
-          </ul>
+        <div class="subscription__container">
+          <div class="subscription__controls controls">
+            <ul>
+              <li>
+                <button class="controls__toggle controls__toggle--active">1 месяц</button>
+              </li>
+              <li>
+                <button class="controls__toggle">6 месяцев</button>
+              </li>
+              <li>
+                <button class="controls__toggle">12 месяцев</button>
+              </li>
+            </ul>
+          </div>
+          <div class="subscription__rates">
+            <ul id="subscription-month" class="subscription__tabs subscription__tabs--active">
+              <li>
+                <h3>С тренером</h3>
+                <h4>12 занятий</h4>
+                <span>5000</span>
+                <div class="subscription__price">
+                  <p>5000</p>
+                  <svg width="30" height="42">
+                    <use xlink:href=#icon-rub></use>
+                  </svg>
+                </div>
+                <a href="buy-subscription.html">купить абонемент</a>
+              </li>
+              <li>
+                <h3>Дневной</h3>
+                <h4>с 8:00 до 17:00</h4>
+                <span>1700</span>
+                <div class="subscription__price">
+                  <p>1700</p>
+                  <svg width="30" height="42">
+                    <use xlink:href=#icon-rub></use>
+                  </svg>
+                </div>
+                <a href="buy-subscription.html">купить абонемент</a>
+              </li>
+              <li>
+                <h3>Полный день</h3>
+                <h4>с 8:00 до 22:00 </h4>
+                <span>2700</span>
+                <div class="subscription__price">
+                  <p>2700</p>
+                  <svg width="30" height="42">
+                    <use xlink:href=#icon-rub></use>
+                  </svg>
+                </div>
+                <a href="buy-subscription.html">купить абонемент</a>
+              </li>
+            </ul>
+            <ul id="subscription-semiannual" class="subscription__tabs">
+              <li>
+                <h3>С тренером</h3>
+                <h4>12 занятий</h4>
+                <span>4444</span>
+                <div class="subscription__price">
+                  <p>4444</p>
+                  <svg width="30" height="42">
+                    <use xlink:href=#icon-rub></use>
+                  </svg>
+                </div>
+                <a href="buy-subscription.html">купить абонемент</a>
+              </li>
+              <li>
+                <h3>Дневной</h3>
+                <h4>с 8:00 до 17:00</h4>
+                <span>465</span>
+                <div class="subscription__price">
+                  <p>465</p>
+                  <svg width="30" height="42">
+                    <use xlink:href=#icon-rub></use>
+                  </svg>
+                </div>
+                <a href="buy-subscription.html">купить абонемент</a>
+              </li>
+              <li>
+                <h3>Полный день</h3>
+                <h4>с 8:00 до 22:00 </h4>
+                <span>7080</span>
+                <div class="subscription__price">
+                  <p>7080</p>
+                  <svg width="30" height="42">
+                    <use xlink:href=#icon-rub></use>
+                  </svg>
+                </div>
+                <a href="buy-subscription.html">купить абонемент</a>
+              </li>
+            </ul>
+            <ul id="subscription-day" class="subscription__tabs">
+              <li>
+                <h3>С тренером</h3>
+                <h4>12 занятий</h4>
+                <span>70</span>
+                <div class="subscription__price">
+                  <p>70</p>
+                  <svg width="30" height="42">
+                    <use xlink:href=#icon-rub></use>
+                  </svg>
+                </div>
+                <a href="buy-subscription.html">купить абонемент</a>
+              </li>
+              <li>
+                <h3>Дневной</h3>
+                <h4>с 8:00 до 17:00</h4>
+                <span>600</span>
+                <div class="subscription__price">
+                  <p>600</p>
+                  <svg width="30" height="42">
+                    <use xlink:href=#icon-rub></use>
+                  </svg>
+                </div>
+                <a href="buy-subscription.html">купить абонемент</a>
+              </li>
+              <li>
+                <h3>Полный день</h3>
+                <h4>с 8:00 до 22:00 </h4>
+                <span>999</span>
+                <div class="subscription__price">
+                  <p>999</p>
+                  <svg width="30" height="42">
+                    <use xlink:href=#icon-rub></use>
+                  </svg>
+                </div>
+                <a href="buy-subscription.html">купить абонемент</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <ul class="subscription__tabs">
-          <li>
-            <h3>С тренером</h3>
-            <h4>12 занятий</h4>
-            <span>5000</span>
-            <div class="subscription__price">
-              <p>5000</p>
-              <svg width="30" height="42">
-                <use xlink:href=#icon-rub></use>
-              </svg>
-            </div>
-            <a href="buy-subscription.html">купить абонемент</a>
-          </li>
-          <li>
-            <h3>Дневной</h3>
-            <h4>с 8:00 до 17:00</h4>
-            <span>1700</span>
-            <div class="subscription__price">
-              <p>1700</p>
-              <svg width="30" height="42">
-                <use xlink:href=#icon-rub></use>
-              </svg>
-            </div>
-            <a href="buy-subscription.html">купить абонемент</a>
-          </li>
-          <li>
-            <h3>Полный день</h3>
-            <h4>с 8:00 до 22:00 </h4>
-            <span>2700</span>
-            <div class="subscription__price">
-              <p>2700</p>
-              <svg width="30" height="42">
-                <use xlink:href=#icon-rub></use>
-              </svg>
-            </div>
-            <a href="buy-subscription.html">купить абонемент</a>
-          </li>
-        </ul>
       </div>
 
     </section>
