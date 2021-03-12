@@ -12,10 +12,11 @@
 .apply__form {
   max-width: 683px;
 
-  margin: 0 auto;
+  margin: 0 0 0 auto;
   padding: 63px 170px 67px 103px;
 
   @media (max-width: $tablet-width) {
+    margin: 0 auto;
     padding: 71px 119px 66px 89px;
   }
 
