@@ -76,7 +76,7 @@
 'use strict';
 
 (function () {
-  var subscriptionBlock = document.querySelector('.subscription')
+  var subscriptionBlock = document.querySelector('.subscription');
 
   if (subscriptionBlock) {
     var toggle = subscriptionBlock.querySelectorAll('.controls__toggle');

@@ -65,6 +65,15 @@
     background-color: transparent;
   }
 
+  &:hover,
+  &:focus {
+    color: $main-blue;
+
+    &::after {
+      background-color: $main-red;
+    }
+  }
+
   @media (max-width: $tablet-width) {
     padding-top: 2px;
 
