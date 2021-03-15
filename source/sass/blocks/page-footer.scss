@@ -14,12 +14,12 @@
 
   @media (max-width: $tablet-width) {
     width: 100%;
-    padding: 46px 41px;
+    padding: 48px 41px;
     padding-right: 45px;
   }
 
   @media (max-width: $mobile-width) {
-    width: 400px;
+    width: 100%;
     flex-direction: column;
 
     padding: 45px;

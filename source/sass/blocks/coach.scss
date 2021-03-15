@@ -1,9 +1,9 @@
 .coach {
   max-width: 1366px;
-  padding: 113px 103px 80px;
-  margin: 0 auto;
 
-  position: relative;
+  padding-top: 113px;
+  padding-bottom: 80px;
+  margin: 0 auto;
 
   @media (max-width: $tablet-width) {
     padding-top: 94px;
@@ -15,17 +15,56 @@
   }
 }
 
+.coach__header {
+  max-width: 1200px;
+
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media (max-width: $tablet-width) {
+    min-width: 768px;
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-width: 320px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.coach__slider-wrapper {
+  width: 84.92%;
+  max-width: 1160px;
+
+  position: relative;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    max-width: 566px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 226px;
+  }
+}
+
 .coach__slider {
   max-width: 1160px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 
-  position: relative;
   flex-flow: row;
 
   overflow: hidden;
   z-index: 1;
+
+  @media (max-width: $tablet-width) {
+    width: 566px;
+  }
 
   @media (max-width: $mobile-width) {
     width: 226px;
@@ -70,11 +109,11 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: nowrap;
-  position: relative;
 
   font-family: $font-main;
 
   @media (max-width: $tablet-width) {
+    max-width: 566px;
     justify-content: center;
   }
 
@@ -88,14 +127,13 @@
 }
 
 .coach__item {
-  width: calc(25% - 30px);
+  width: 260px;
   min-height: 294px;
 
   margin-right: 40px;
   margin-bottom: 40px;
 
   display: block;
-  position: relative;
 
   color: $white;
 
@@ -105,7 +143,9 @@
 
   @media (max-width: $tablet-width) {
     width: 268px;
+    max-width: 268px;
     height: 294px;
+
     margin-right: 30px;
   }
 
@@ -210,49 +250,54 @@
   padding: 0;
 
   position: absolute;
-  top: 36.7%;
+  top: 0;
 
   content: "";
-  border: none;
   cursor: pointer;
 
   outline: none;
+  border: 1px solid transparent;
 
-  @media (max-width: $tablet-width) {
-    top: 33.7%;
+  &:hover,
+  &:focus {
+    border: 1px solid #b6bdcc;
+  }
+
+  @media (max-width: $mobile-width) {
+    height: 100%;
   }
 
   @media (max-width: $mobile-min-width) {
-    height: 264px;
+    height: 274px;
   }
 }
 
 .coach__button--prev {
-  left: 3.1%;
-  background: url("../img/icon-big-prev.svg") no-repeat 20% 43%;
+  left: -57px;
+  background: url("../img/icon-big-prev.svg") no-repeat 20% 50%;
 
-  @media (max-width: $tablet-width) {
-    left: 5.1%;
+  @media (max-width: $mobile-width) {
+    left: -60px;
+    background: url("../img/icon-small-prev.svg") no-repeat 92% 50%;
   }
 
   @media (max-width: $mobile-width) {
-    left: -3px;
-    background: url("../img/icon-small-prev.svg") no-repeat 92% 43%;
+    left: -47px;
   }
 }
 
 .coach__button--next {
   position: absolute;
-  right: 3.2%;
-  background: url("../img/icon-big-next.svg") no-repeat 92% 43%;
-
-  @media (max-width: $tablet-width) {
-    right: 6%;
-  }
+  right: -57px;
+  background: url("../img/icon-big-next.svg") no-repeat 92% 50%;
 
   @media (max-width: $mobile-width) {
-    right: 14px;
-    background: url("../img/icon-small-next.svg") no-repeat 92% 43%;
+    right: -60px;
+    background: url("../img/icon-small-next.svg") no-repeat 92% 50%;
+  }
+
+  @media (max-width: $mobile-min-width) {
+    right: -34px;
   }
 }
 

@@ -4844,6 +4844,8 @@
 })));
 //# sourceMappingURL=imask.js.map
 
+/* eslint-disable */
+
 /**
  * Swiper 6.5.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions

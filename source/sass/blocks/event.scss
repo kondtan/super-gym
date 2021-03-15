@@ -155,8 +155,7 @@
 }
 
 .event__date-block__month,
-.event__date-block__year{
-
+.event__date-block__year {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -183,12 +182,13 @@
     top: 6px;
     left: 0;
 
-    content: '';
+    content: "";
     background-color: $white;
   }
 
   @media (max-width: $tablet-width) {
     margin-bottom: 3px;
+
     &::after {
       top: 1px;
     }
@@ -265,6 +265,7 @@
   @media (max-width: $tablet-width) {
     width: 386px;
     min-height: 292px;
+    height: 292px;
   }
 
   @media (max-width: $mobile-width) {

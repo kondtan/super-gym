@@ -37,7 +37,8 @@
 
   @media (max-width: $mobile-width) {
     width: 100%;
-    margin-right: 0;
+
+    margin: 0 auto;
     padding-top: 52px;
 
     align-items: flex-end;
@@ -149,7 +150,8 @@
 
 .statement a {
   width: 232px;
-  margin-top: 83px;
+  // margin-top: 83px;
+  margin-top: auto;
   margin-right: -2px;
   padding: 19px 50px;
 
@@ -172,7 +174,8 @@
   @media (max-width: $tablet-width) {
     width: 185px;
 
-    margin-top: 57px;
+    // margin-top: 57px;
+    margin-top: auto;
     margin-right: -2px;
     padding: 19px 25px;
   }
@@ -181,6 +184,8 @@
     width: 100%;
     margin-top: 55px;
     margin-right: 0;
+    padding: 20px 0;
+
     text-align: center;
   }
 }

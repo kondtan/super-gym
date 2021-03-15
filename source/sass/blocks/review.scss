@@ -3,7 +3,7 @@
 
   width: 100%;
   padding: 0 7.5%;
-  padding-top: 120px;
+  padding-top: 118px;
   padding-bottom: 120px;
 
   @media (max-width: $tablet-width) {
@@ -169,8 +169,13 @@
   top: 38.6%;
 
   content: "";
-  border: none;
+  border: 1px solid transparent;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #b6bdcc;
+  }
 
   @media (max-width: $tablet-width) {
     height: 62%;
