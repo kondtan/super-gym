@@ -353,8 +353,8 @@ a {
           align-items: flex-end; }
   @media (max-width: 1199px) {
     .statement__wrapper {
-      width: 47.7%;
-      margin-right: 4.4%;
+      width: 336px;
+      margin-right: 25px;
       padding: 48px 0 23px; } }
   @media (max-width: 767px) {
     .statement__wrapper {
@@ -390,16 +390,7 @@ a {
           flex-flow: column; }
   @media (max-width: 1199px) {
     .statement__text-wrapper {
-      margin: -74px 211px 0 0; } }
-  @media (max-width: 1199px) and (min-width: 1024px) {
-    .statement__text-wrapper {
-      margin: 20px 316px 0 0; } }
-  @media (max-width: 1023px) {
-    .statement__text-wrapper {
-      margin: 4px 261px 0 0; } }
-  @media (max-width: 938px) {
-    .statement__text-wrapper {
-      margin: -84px 211px 0 0; } }
+      margin: -84px 216px 0 0; } }
   @media (max-width: 767px) {
     .statement__text-wrapper {
       margin: 0 200px 0 0; } }
@@ -468,8 +459,7 @@ a {
   @media (max-width: 1199px) {
     .statement a {
       width: 185px;
-      margin-top: auto;
-      margin-right: -2px;
+      margin: auto 3px 0 0;
       padding: 19px 25px; } }
   @media (max-width: 767px) {
     .statement a {

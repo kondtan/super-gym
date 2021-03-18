@@ -29,9 +29,9 @@
   align-items: flex-end;
 
   @media (max-width: $tablet-width) {
-    width: 47.7%;
+    width: 336px;
 
-    margin-right: 4.4%;
+    margin-right: 25px;
     padding: 48px 0 23px;
   }
 
@@ -70,19 +70,7 @@
   flex-flow: column;
 
   @media (max-width: $tablet-width) {
-    margin: -74px 211px 0 0;
-  }
-
-  @media (max-width: 1199px) and (min-width: 1024px) {
-    margin: 20px 316px 0 0;
-  }
-
-  @media (max-width: 1023px) {
-    margin: 4px 261px 0 0;
-  }
-
-  @media (max-width: 938px) {
-    margin: -84px 211px 0 0;
+    margin: -84px 216px 0 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -150,7 +138,7 @@
 
 .statement a {
   width: 232px;
-  // margin-top: 83px;
+
   margin-top: auto;
   margin-right: -2px;
   padding: 19px 50px;
@@ -174,9 +162,7 @@
   @media (max-width: $tablet-width) {
     width: 185px;
 
-    // margin-top: 57px;
-    margin-top: auto;
-    margin-right: -2px;
+    margin: auto 3px 0 0;
     padding: 19px 25px;
   }
 
