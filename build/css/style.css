@@ -975,6 +975,9 @@ a {
   @media (max-width: 1199px) {
     .controls li {
       margin-right: 40px; } }
+  @media (max-width: 420px) {
+    .controls li {
+      margin-right: auto; } }
   @media (max-width: 320px) {
     .controls li {
       margin-right: auto; } }
