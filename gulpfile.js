@@ -112,7 +112,7 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-ghpages.publish("dist", function(err) {});
+ghpages.publish("build", function(err) {});
 
 gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "main", "vendor", "html", "webp"));
 gulp.task("start", gulp.series("build", "server"));
